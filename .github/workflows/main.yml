@@ -14,4 +14,4 @@ jobs:
         server: betwick.com.ng
         username: ghiuser@ghiassets.betwick.com.ng
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/ghiassets.betwick.com.ng/
+        server-dir: /
