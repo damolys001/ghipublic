@@ -14,4 +14,4 @@ jobs:
         server: ftp.samkirkland.com
         username: ghiuser
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/ghiassets.betwick.com.ng
+        server-dir: /public_html/ghiassets.betwick.com.ng/
