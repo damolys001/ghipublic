@@ -5,6 +5,9 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
+    - name: getting ftp user name
+      run: echo "1 - $BETWICK_FTPUSER_, 2 - ${{ env.BETWICK_FTPUSER_ }}, 3 -  ${{ vars.BETWICK_FTPUSER_ }} "
+  
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
     
@@ -12,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: betwick.com.ng
-        username: ghiuser@ghiassets.betwick.com.ng
-        password: ${{ secrets.ftp_password }}
-        server-dir: /
+        username: ${{ vars.BETWICK_FTPUSER_ }}
+        password: ${{ secrets.BETWICK_FTPUSERPASS_ }}
+        server-dir: /public_html/ghiassets/
