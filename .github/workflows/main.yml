@@ -17,4 +17,4 @@ jobs:
         server: betwick.com.ng
         username: ${{ vars.BETWICK_FTPUSER_ }}
         password: ${{ secrets.BETWICK_FTPUSERPASS_ }}
-        server-dir: /ghiassets/
+        server-dir: /public_html/ghiassets/
