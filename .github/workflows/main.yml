@@ -18,3 +18,11 @@ jobs:
         username: ${{ vars.BETWICK_FTPUSER_ }}
         password: ${{ secrets.BETWICK_FTPUSERPASS_ }}
         server-dir: /public_html/ghiassets/
+
+    - name: 📂 Sync files to GHI Subdomain
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: betwick.com.ng
+        username: ghiuser@ghiassets.betwick.com.ng
+        password: ${{ secrets.ftp_password }}
+        server-dir: /
