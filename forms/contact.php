@@ -51,7 +51,7 @@
     </table>
     </body>
     </html>
-";
+"; 
 
 
   // Always set content-type when sending HTML email
