@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-	"use strict";
+	//"use strict";
 
 	var isMobile = false; //initiate as false
 // device detection
@@ -46,19 +46,26 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 	scrollWindow();
 	
 	
-	// navigation
+	navigation
 	var OnePageNav = function() {
 		var navToggler = $('.navbar-toggler');
 		$(".smoothscroll[href^='#'], #probootstrap-navbar ul li a[href^='#']").on('click', function(e) {
 		 	e.preventDefault();
 		 	var hash = this.hash;
-		 		
+		 	try {	
 		 	$('html, body').animate({
 
+			
 		    scrollTop: $(hash).offset().top
+			
 		  }, 700, 'easeInOutExpo', function(){
 		    window.location.hash = hash;
 		  });
+		}
+		catch(e)
+		{
+			console.log(e)
+		}
 		});
 		$("#probootstrap-navbar ul li a[href^='#']").on('click', function(e){
 			if ( navToggler.is(':visible') ) {

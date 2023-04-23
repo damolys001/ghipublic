@@ -66,24 +66,25 @@ $headers .= 'From:Website<webmaster@example.com>' . "\r\n";
 
 $recaptcha = $_POST['g-recaptcha-response'];
 $res = reCaptcha($recaptcha);
+$msg ="";
 if($res['success'])
 {
     $result = mail($receiving_email_address,$subject,$messageEmail,$headers);
     if($result == true)
     {
-      echo "Your message was sent successfuly";
+      $msg = "Your message was sent successfuly";
     }
     else
     {
-      echo "There was error sending your message, please try again latter";
+      $msg = "There was error sending your message, please try again latter";
     }
 }else{
-  echo "Please validate you are not a robot";
+  $msg = "Please validate you are not a robot";
 }
 
 
 function reCaptcha($recaptcha){
-  $secret = "6LcN46glAAAAAHIlxg2OLfGtYSD5HuP0QaRLbenc";
+  $secret = "6Ldw-KolAAAAALNtvY8k3K4H9S7JM_8n6iB9-pj9";
   $ip = $_SERVER['REMOTE_ADDR'];
 
   $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
@@ -99,6 +100,13 @@ function reCaptcha($recaptcha){
   return json_decode($data, true);
 }
 
+
+$data = array("status" =>$res['success'], "msg" => $msg );
+
+header("Content-Type: application/json");
+echo json_encode($data);
+
+exit();
 
 
 
