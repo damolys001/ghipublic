@@ -58,36 +58,58 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="whoweare.html" data-bs-toggle="dropdown">Who we are</a>
             <ul class="dropdown-menu ">
-              <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-              <li> 
-                <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
-                <ul class="submenu dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
-                  <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
-                  <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
-                    <ul class="submenu dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Multi level 1</a></li>
-                      <li><a class="dropdown-item" href="#">Multi level 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
-                  <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
-              <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+              <li> <a class="dropdown-item" href="#"> Carear </a></li>
+              <li> <a class="dropdown-item" href="#"> Our Team</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#">Our Business Units</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Travel Agencies</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Busines Travel Management Limited</a></li>
+                  <li><a class="dropdown-item" href="#">Tour Brokers International</a></li>
+                  <li><a class="dropdown-item" href="#">Transcap Travel Bureaux Limited</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">GSAs in Nigeria</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sky Logistics Limited</a></li>
+                  <li><a class="dropdown-item" href="#">Sky Logistics Cargo Limited</a></li>
+                  <li><a class="dropdown-item" href="#">APG Global Associates</a></li>
+                  <li><a class="dropdown-item" href="#">Total Air Logistics</a></li>
+                  <li><a class="dropdown-item" href="#">Bespoke Holidays Limited</a></li>
+                  <li><a class="dropdown-item" href="#">Airline Representatives West Africa</a></li>
+
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">GSAs in Other Countries</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sky Logistics Angola</a></li>
+                  <li><a class="dropdown-item" href="#">Airline Representatives Angola</a></li>
+                  <li><a class="dropdown-item" href="#">Air Logistics Cameroon</a></li>
+                  <li><a class="dropdown-item" href="#">Airline Management Services Cameroon</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Otherx</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Frontier Academy Limited</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </li>
           <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
           <li class="nav-item"><a class="nav-link btn-success btnRequestCallMenu" href="#">Request a Call</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-
   <!-- END nav -->
 
 
@@ -614,12 +636,12 @@
   <script src="assets/js/main.js"></script>
 
 
-  <script>
-    // function onSubmit(token) {
-    //   document.getElementById("requestCallForm").submit();
-    // }
 
-    // when form is submit
+
+
+
+  <script>
+
     $('#requestCallForm').submit(function () {
 
       // we stoped it
@@ -659,65 +681,65 @@
       }
     })
 
+    $(document).ready(function () {
+
+      $("li.dropdown").mouseover(function () {
+        $(this).children("ul.dropdown-menu").css("display", "block")
+      })
 
 
-  //   $('.dropdown a,.nav-item').mouseover(function(){
-  // console.log("I'm over the moon")
-  // });
+      $("li.dropdown").mouseout(function () {
+        $(this).children("ul.dropdown-menu").css("display", "none")
+      })
 
 
-document.addEventListener("DOMContentLoaded", function(){
+    })
 
-  document.querySelectorAll('.dropdown a').forEach(function(element){
-    
-    element.addEventListener('mouseover', function (e) {
-        let nextEl = this.nextElementSibling  //.nextSibling;
-       
-        if(nextEl && nextEl.classList.contains('dropdown-menu')) 
-        {	
-          if(nextEl.style.display == 'block'){
-            nextEl.style.display = 'none';
-          } 
-          else {
-             nextEl.style.display = 'block';
-          }
-        }
-    });
-
-   
-  })
-
-}); 
-// DOMContentLoaded  end
 
   </script>
 
-<style>
-  /* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-.dropdown-menu li{ position: relative; 	}
-.nav-item .submenu{ 
-  display: none;
-  position: absolute;
-  left:100%; top:-7px;
-}
-.nav-item .submenu-left{ 
-  right:100%; left:auto;
-}
-.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
-/* ============ desktop view .end// ============ */
+  <style>
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+      .dropdown-menu li {
+        position: relative;
+      }
 
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-.dropdown-menu .dropdown-menu{
-    margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-    
-}
-}	
-/* ============ small devices .end// ============ */
-</style>
+      .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+      }
+
+      .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+      }
+
+      .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+      }
+
+      .dropdown-menu>li:hover>.submenu {
+        display: block;
+      }
+    }
+
+    /* ============ desktop view .end// ============ */
+
+    /* ============ small devices ============ */
+    @media (max-width: 991px) {
+      .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+
+      }
+    }
+
+    /* ============ small devices .end// ============ */
+  </style>
 </body>
 
 </html>
