@@ -607,3 +607,11 @@ a {
 .btn-rounded {
   border-radius: 50px
 }
+
+
+img.rounded-corners {
+	border-radius: 5px;
+ /* box-shadow: */
+ box-shadow: 0 0 3px #FFFFFF, 0 0 3px #FFFFFF;
+  }
+

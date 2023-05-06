@@ -14,6 +14,13 @@ $(document).ready(function($) {
         $(this).children("ul.dropdown-menu").css("display", "none")
       })
 
+	  $(".dropdown-toggle").click(function(e){
+		e.preventDefault();
+		if($(this).attr("href") !="#")
+		console.log($(this).attr("href"))
+		window.location.assign( $(this).attr("href"))
+	  })
+
 
 
 //Request a call form
