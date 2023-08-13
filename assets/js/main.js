@@ -109,7 +109,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 	scrollWindow();
 	
 	
-	navigation
+	// navigation
 	var OnePageNav = function() {
 		var navToggler = $('.navbar-toggler');
 		$(".smoothscroll[href^='#'], #probootstrap-navbar ul li a[href^='#']").on('click', function(e) {
