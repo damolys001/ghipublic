@@ -2,7 +2,7 @@ $(document).ready(function($) {
 
 	"use strict";
 
-	var isMobile = false; //initiate as false
+	var isMobile = true; //initiate as false
 
 //Menu drop down fix
 	$("li.dropdown").mouseover(function () {

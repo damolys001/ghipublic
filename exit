@@ -1,0 +1,247 @@
+[33mcommit 40d8c9c82f91d162eb13106d9d2512054c4362d3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Adedamola Adeyemi <adedamola.adeyemi@live.com>
+Date:   Sun Aug 13 13:37:49 2023 +0100
+
+    test Mobile Load
+
+[1mdiff --git a/assets/css/style.css b/assets/css/style.css[m
+[1mindex a88e2ae..6a8f170 100644[m
+[1m--- a/assets/css/style.css[m
+[1m+++ b/assets/css/style.css[m
+[36m@@ -19,6 +19,8 @@[m [mhtml {[m
+ body {[m
+   font-family: "Work Sans", Arial, sans-serif; }[m
+ [m
+[32m+[m[32m  p{color: black;}[m
+[32m+[m
+ input, textarea, p {[m
+   font-weight: 300; }[m
+ [m
+[36m@@ -571,7 +573,7 @@[m [ma {[m
+     display: none;[m
+     position: absolute;[m
+     left: 100%;[m
+[31m-    top: -7px;[m
+[32m+[m[32m    top: -20px;[m
+   }[m
+ [m
+   .nav-item .submenu-left {[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 456d0a2..7932d4b 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -277,23 +277,33 @@[m
+     </div>[m
+   </section>[m
+ [m
+[32m+[m[32m  <section class="probootstrap-section-half d-md-flex">[m
+[32m+[m[32m    <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/skyLogistics.jpg)"></div>[m
+[32m+[m[32m    <div class="probootstrap-text order-1">[m
+[32m+[m[32m      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">[m
+[32m+[m[32m        <h2 class="heading mb-4">SKY LOGISTICS LIMITED</h2>[m
+[32m+[m[32m        <p>The company was incorporated in 2007 specifically to act as the GSA for Delta Air Lines Inc. in Nigeria. It[m
+[32m+[m[32m          is the General Sales Agent, Nigeria for DELTA AIR LINES INC., It was the first and only American Airline[m
+[32m+[m[32m          (until November 2011) operating direct flights between Nigeria and the USA. Delta has daily flights between[m
+[32m+[m[32m          Atlanta and Lagos.</p>[m
+[32m+[m[32m        <p>Sky Logistics Cargo Limited handles the cargo for South African Airways and RwandAir.</p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Learn More</a></p>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m
+[32m+[m[41m  [m
+ [m
+   <section class="probootstrap-section-half d-md-flex" id="section-about">[m
+     <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn"[m
+[31m-      style="background-image: url(assets/GHIAssetsImages/btml.jpg)"></div>[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/airLogistics.jpg)"></div>[m
+     <div class="probootstrap-text">[m
+       <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">[m
+[31m-        <h2 class="heading mb-4"> Business Travel Management Limited</h2>[m
+[31m-        [m
+[31m-        <h2 class="heading mb-4">Tour Brokers International Nigeria</h2>[m
+[31m-        <p><strong>Travel Management Limited (BTM)</strong> , is a member of the GHI Assets Ltd group. Business Travel[m
+[31m-          Management Limited was incorporated in 2004 and is an ISO 9001-2008 accredited agent as well as being[m
+[31m-          accredited by I.A.T.A. (International Air Transport Association).</p>[m
+[31m-        <p>In July 1999, the company which specializes in comprehensive travel management, corporate services and[m
+[31m-          logistics for businesses, became the top provider of corporate travel management, B2B logistic solutions, and[m
+[31m-          the pacesetter in the application of technology and innovative travel management in Nigeria. Business Travel[m
+[31m-          Management Limited quickly expanded to service clients throughout West & Central Africa.</p>[m
+[31m-        <p><a target="_blank" href="https://btmlimited.net" class="btn btn-primary">Visit Our website for more</a></p>[m
+[32m+[m[32m        <h2 class="heading mb-4">TOTAL AIR LOGISTICS LIMITED</h2>[m
+[32m+[m[32m        <p>Total Air Logistics Limited was in incorporated in February 2011 specifically to represent China Southern[m
+[32m+[m[32m          Airlines in Nigeria as the General Sales Agent. It currently as offline GSA for China Southern Airlines.</p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Read More</a></p>[m
+       </div>[m
+     </div>[m
+   </section>[m
+[36m@@ -301,25 +311,47 @@[m
+ [m
+   <section class="probootstrap-section-half d-md-flex">[m
+     <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"[m
+[31m-      style="background-image: url(assets/GHIAssetsImages/tourBroker.jpg)"></div>[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/skyLogistics.jpg)"></div>[m
+     <div class="probootstrap-text order-1">[m
+       <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">[m
+[31m-        <p><strong>Tour Brokers International Limited (TBI)</strong> was incorporated in 2002 to professionally package[m
+[31m-          tourism services to selective destinations for Nigerian business and leisure travelers and to expatriates[m
+[31m-          living in Nigeria. TBI’s goal is not only to meet the discerning travel needs of its clients but also to[m
+[31m-          anticipate them well in advance. TBI offers tailor-made tour packages to suit the varying requirements of[m
+[31m-          individuals, families, groups and corporate bodies.<br><br>[m
+[31m-          TBI’s strategic partnership with international companies such as Royal Caribbean International and GTA,[m
+[31m-          combined with an array of unrivaled innovative ideas and high credibility on delivering on her promise gives[m
+[31m-          it a strong competitive advantage over others in the market. With a staff strength of 38, TBI’s highly trained[m
+[31m-          and experienced Travel consultants ensure that all clients get optimum value for money. <br><br></p>[m
+[31m-        <p><a href="http://tourbrokersinternational.com" class="btn btn-primary">Visit Our website for more</a></p>[m
+[32m+[m[32m        <h2 class="heading mb-4">SKY LOGISTICS CARGO LTD</h2>[m
+[32m+[m[32m        <p>The  company specializing in logistics and cargo services. They offer a range of solutions for the transportation, handling, and management of goods and products. With a focus on efficient and reliable delivery, the company aims to meet the diverse needs of businesses and individuals. Services provided by Sky Logistics Cargo Ltd include freight forwarding, shipping, warehousing, customs clearance, and distribution. Through their expertise and network, they facilitate the movement of goods across various regions and ensure timely and secure deliveries. The company's commitment to customer satisfaction and industry best practices underscores their role as a trusted partner in the logistics and cargo sector.</p>[m
+[32m+[m[32m        <p>Sky Logistics Cargo Limited handles the cargo for South African Airways and RwandAir.</p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Learn More</a></p>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+ [m
+ [m
+[32m+[m[32m  <section class="probootstrap-section-half d-md-flex" id="section-about">[m
+[32m+[m[32m    <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn"[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/airLogistics.jpg)"></div>[m
+[32m+[m[32m    <div class="probootstrap-text">[m
+[32m+[m[32m      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">[m
+[32m+[m[32m        <h2 class="heading mb-4">AIRLINE REPRESENTATIVES WEST AFRICA</h2>[m
+[32m+[m[32m        Airline Representatives West Africa  is an organization that   act as a bridge connecting airlines with the local market, travelers, and businesses. With a focus on aviation and travel industry partnerships, the organization facilitates communication, collaboration, and cooperation between airlines and stakeholders in West Africa. Our services may include marketing, sales, distribution, and customer support on behalf of airlines. </p>[m
+[32m+[m[32m          <p></p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Read More</a></p>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  <section class="probootstrap-section-half d-md-flex">[m
+[32m+[m[32m    <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/skyLogistics.jpg)"></div>[m
+[32m+[m[32m    <div class="probootstrap-text order-1">[m
+[32m+[m[32m      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">[m
+[32m+[m[32m        <h2 class="heading mb-4">SKY ALLIANCE AND INTEGRATED LOGISTICS LTD</h2>[m
+[32m+[m[32m        <p>The  company aims to streamline the movement of goods and products, ensuring timely and reliable deliveries for businesses and individuals. By leveraging advanced technology and industry expertise, Sky Alliance and Integrated Logistics Ltd strive to optimize supply chain operations, reduce costs, and enhance overall efficiency. Our commitment to innovative solutions and customer satisfaction positions us as a trusted partner in the logistics industry, contributing to the success of our clients' businesses.</p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Learn More</a></p>[m
+       </div>[m
+     </div>[m
+   </section>[m
+ [m
+[32m+[m
+[32m+[m[41m  [m
+[32m+[m[41m  [m
+   <section class="probootstrap-section-half d-md-flex" id="section-about">[m
+     <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn"[m
+       style="background-image: url(assets/GHIAssetsImages/transcap.jpg)"></div>[m
+[36m@@ -336,36 +368,70 @@[m
+       </div>[m
+     </div>[m
+   </section>[m
+[31m-[m
+[31m-[m
+[32m+[m[41m  [m
+[32m+[m[41m  [m
+   <section class="probootstrap-section-half d-md-flex">[m
+     <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"[m
+[31m-      style="background-image: url(assets/GHIAssetsImages/skyLogistics.jpg)"></div>[m
+[31m-    <div class="probootstrap-text order-1">[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/airLogistics.jpg)"></div>[m
+[32m+[m[32m    <div class="probootstrap-text">[m
+       <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">[m
+[31m-        <h2 class="heading mb-4">SKY LOGISTICS LIMITED</h2>[m
+[31m-        <p>The company was incorporated in 2007 specifically to act as the GSA for Delta Air Lines Inc. in Nigeria. It[m
+[31m-          is the General Sales Agent, Nigeria for DELTA AIR LINES INC., It was the first and only American Airline[m
+[31m-          (until November 2011) operating direct flights between Nigeria and the USA. Delta has daily flights between[m
+[31m-          Atlanta and Lagos.</p>[m
+[31m-        <p>Sky Logistics Cargo Limited handles the cargo for South African Airways and RwandAir.</p>[m
+[31m-        <p><a href="#" class="btn btn-primary">Learn More</a></p>[m
+[32m+[m[32m        <h2 class="heading mb-4">APG GLOBAL ASSOCIATES NETWORK LTD</h2>[m
+[32m+[m[32m        Our organisation operates within the global travel and aviation industry. As a network of associates, we facilitate partnerships and collaborations between airlines, travel agencies, and other stakeholders. Our focus is on enhancing the distribution and accessibility of airline services to travelers and clients worldwide. Through strategic alliances and innovative solutions, APG Global Associates Network Ltd aims to optimize sales, marketing, and customer support for airlines. By leveraging our extensive network and industry expertise, we contribute to improved connectivity, efficient operations, and enhanced customer experiences within the travel sector. We are commitmented to fostering relationships and driving growth underscores our role as a valuable intermediary in the aviation and travel ecosystem. </p>[m
+[32m+[m[32m          <p></p>[m
+[32m+[m[32m        <p><a href="#" class="btn btn-primary">Read More</a></p>[m
+       </div>[m
+     </div>[m
+   </section>[m
+ [m
+[32m+[m
+[32m+[m
+[32m+[m
+   <section class="probootstrap-section-half d-md-flex" id="section-about">[m
+     <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn"[m
+[31m-      style="background-image: url(assets/GHIAssetsImages/airLogistics.jpg)"></div>[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/btml.jpg)"></div>[m
+     <div class="probootstrap-text">[m
+       <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">[m
+[31m-        <h2 class="heading mb-4">TOTAL AIR LOGISTICS LIMITED</h2>[m
+[31m-        <p>Total Air Logistics Limited was in incorporated in February 2011 specifically to represent China Southern[m
+[31m-          Airlines in Nigeria as the General Sales Agent. It currently as offline GSA for China Southern Airlines.</p>[m
+[31m-        <p><a href="#" class="btn btn-primary">Read More</a></p>[m
+[32m+[m[32m        <h2 class="heading mb-4"> Business Travel Management Limited</h2>[m
+[32m+[m[41m        [m
+[32m+[m[41m        [m
+[32m+[m[32m        <p><strong>Travel Management Limited (BTM)</strong> , is a member of the GHI Assets Ltd group. Business Travel[m
+[32m+[m[32m          Management Limited was incorporated in 2004 and is an ISO 9001-2008 accredited agent as well as being[m
+[32m+[m[32m          accredited by I.A.T.A. (International Air Transport Association).</p>[m
+[32m+[m[32m        <p>In July 1999, the company which specializes in comprehensive travel management, corporate services and[m
+[32m+[m[32m          logistics for businesses, became the top provider of corporate travel management, B2B logistic solutions, and[m
+[32m+[m[32m          the pacesetter in the application of technology and innovative travel management in Nigeria. Business Travel[m
+[32m+[m[32m          Management Limited quickly expanded to service clients throughout West & Central Africa.</p>[m
+[32m+[m[32m        <p><a target="_blank" href="https://btmlimited.net" class="btn btn-primary">Visit Our website for more</a></p>[m
+       </div>[m
+     </div>[m
+   </section>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  <section class="probootstrap-section-half d-md-flex">[m
+[32m+[m[32m    <div class="probootstrap-image order-2 probootstrap-animate" data-animate-effect="fadeIn"[m
+[32m+[m[32m      style="background-image: url(assets/GHIAssetsImages/tourBroker.jpg)"></div>[m
+[32m+[m[32m    <div class="probootstrap-text order-1">[m
+[32m+[m[32m      <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInLeft">[m
+[32m+[m[32m        <h2 class="heading mb-4">Tour Brokers International Nigeria</h2>[m
+[32m+[m[32m        <p><strong>Tour Brokers International Limited (TBI)</strong> was incorporated in 2002 to professionally package[m
+[32m+[m[32m          tourism services to selective destinations for Nigerian business and leisure travelers and to expatriates[m
+[32m+[m[32m          living in Nigeria. TBI’s goal is not only to meet the discerning travel needs of its clients but also to[m
+[32m+[m[32m          anticipate them well in advance. TBI offers tailor-made tour packages to suit the varying requirements of[m
+[32m+[m[32m          individuals, families, groups and corporate bodies.<br><br>[m
+[32m+[m[32m          TBI’s strategic partnership with international companies such as Royal Caribbean International and GTA,[m
+[32m+[m[32m          combined with an array of unrivaled innovative ideas and high credibility on delivering on her promise gives[m
+[32m+[m[32m          it a strong competitive advantage over others in the market. With a staff strength of 38, TBI’s highly trained[m
+[32m+[m[32m          and experienced Travel consultants ensure that all clients get optimum value for money. <br><br></p>[m
+[32m+[m[32m        <p><a href="http://tourbrokersinternational.com" class="btn btn-primary">Visit Our website for more</a></p>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[41m  [m
+   <!-- END section -->[m
+ [m
+   <section class="probootstrap_section" style="padding-bottom: 0px ;">[m
+[36m@@ -448,7 +514,8 @@[m
+ [m
+   <script src="assets/js/jquery.min.js"></script>[m
+ [m
+[31m-  <script src="assets/js/popper.min.js"></script>[m
+[32m+[m[32m  <!-- <script src="assets/js/popper.min.js"></script> -->[m
+[32m+[m[32m  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>[m
+   <script src="assets/js/bootstrap.min.js"></script>[m
+   <script src="assets/js/owl.carousel.min.js"></script>[m
+ [m
+[1mdiff --git a/ourteam.html b/ourteam.html[m
+[1mindex 37044bc..8f7504d 100644[m
+[1m--- a/ourteam.html[m
+[1m+++ b/ourteam.html[m
+[36m@@ -271,7 +271,7 @@[m
+ [m
+           She has a wealth of legal and business experience that spans over 35 years and has been on the Board of[m
+           several Companies.[m
+[31m-        </p>[m
+[32m+[m[32m        </p>4[m
+ [m
+ [m
+ [m
