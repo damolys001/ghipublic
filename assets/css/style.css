@@ -572,8 +572,8 @@ a {
   .nav-item .submenu {
     display: none;
     position: absolute;
-    left: 100%;
-    top: -20px;
+    left: 50%;
+    top: -5px;
   }
 
   .nav-item .submenu-left {
