@@ -570,7 +570,7 @@ a {
   }
 
   .nav-item .submenu {
-    display: none;
+    /* display: none; */
     position: absolute;
     left: 50%;
     top: -5px;
