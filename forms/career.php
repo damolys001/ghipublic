@@ -10,8 +10,6 @@
   $receiving_email_address = 'damola@betwick.com.ng';
 
 
-  $receiving_email_address = 'damola@betwick.com.ng';
-
   $fname = "";
   $lname = "";
   $phone = "";
@@ -21,8 +19,8 @@
   $relocate = "";
   $skill = "";
   $salary = "";
-  $subject = "GHI Assets: Customer is requesting for a call";
-  $RequestType = "";
+
+  $applicationName = "";
   
   if (isset($_REQUEST["fname"])) $fname = $_REQUEST["fname"];
   if (isset($_REQUEST["lname"])) $lname = $_REQUEST["lname"];
@@ -33,9 +31,15 @@
   if (isset($_REQUEST["relocate"])) $relocate = $_REQUEST["relocate"];
   if (isset($_REQUEST["skills"])) $skill = $_REQUEST["skills"];
   if (isset($_REQUEST["salary"])) $salary = $_REQUEST["salary"];
-  if (isset($_REQUEST["RequestType"])) $RequestType = $_REQUEST["RequestType"];
+  if (isset($_REQUEST["applicationName"])) $applicationName = $_REQUEST["applicationName"];
   if (isset($_FILES["cvFile"])) {
       $attachment = $_FILES["cvFile"];
+  }
+
+  $subject = "GHI Assets: Application  For " .$applicationName. " Role";
+  if($applicationName=="")
+  {
+    "GHI Assets: Generic Job Application";
   }
   
   $messageEmail = "

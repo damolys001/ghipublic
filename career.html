@@ -193,11 +193,12 @@
       <!-- <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url(assets/images/manager001.jpg); width: 30%;" ></div> -->
       <div class="probootstrap-text mx-auto" style="width: 70%; ">
         <div class="probootstrap-inner probootstrap-animate" data-animate-effect="fadeInRight">
-         <h2 class="heading mb-4">Employment Application</h2>
+         <h2 class="heading mb-4 applicationTitle">Employment Application</h2>
            <!-- <p><em>General Manager</em></p> -->
          
           <form action="forms/career.php" enctype="multipart/form-data" method="post" role="form" class="probootstrap-form  "  id="requestCallForm">
 
+            <input type="hidden" value="" name="applicationName" class="applicationName"/>
             <div class="form-group">
               <div class="row mb-3">
                 <div class="col-md">
@@ -403,19 +404,25 @@
   </body>
   
   <script>
+   let searchParams = new URLSearchParams(window.location.search)
     jQuery(document).ready(function () {
-        jQuery('.forceNumeric').ForceNumericOnly();
+      let param = searchParams.get('name')
+      if(param !== null)
+      {
+$(".applicationTitle").html(param+" Job Application");
+$(".applicationName").val(param)
+      }
+  
+
+      // function mbToBytes(mb) {
+      //   var convertedByte = Math.round(mb * 1048576 * 100000) / 100000;
+      //   return convertedByte;
+      // }
+
+      // var byteRes = mbToBytes(8);
+      // jQuery(".hugeit-contact-column-block div[rel='huge-contact-field-48']").find("input[name='MAX_FILE_SIZE']").attr('value', byteRes);
     });
-    jQuery(document).ready(function () {
-                function mbToBytes(mb) {
-                    var convertedByte = Math.round(mb * 1048576 * 100000) / 100000;
-                    return convertedByte;
-                }
-    
-                var byteRes = mbToBytes(8);
-                jQuery(".hugeit-contact-column-block div[rel='huge-contact-field-48']").find("input[name='MAX_FILE_SIZE']").attr('value', byteRes);
-            });
-</script>
+  </script>
  <style>
 .probootstrap-text {width: 70% !important;}
 .probootstrap-image {width: 30% !important;}
