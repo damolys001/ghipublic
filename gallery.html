@@ -39,6 +39,9 @@
   <link rel="stylesheet" href="assets/css/helpers.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
+   <!-- Popup CSS -->
+   <link href="Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -120,12 +123,12 @@
 
     
 
-    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/whoweare.jpg');" data-stellar-background-ratio="0.5" id="section-home">
+    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/gallery_header.webp');" data-stellar-background-ratio="0.5" id="section-home">
       <div class="overlay"></div>
       <div class="container">
         <div class="row align-items-center text-center" style="padding-top: 0px ;" >
           <div class="col-md">
-            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Who we are</h2>
+            <h2 class="heading mb-2 display-4 font-light probootstrap-animate">Gallery</h2>
              
             <!-- <p class="lead mb-5 probootstrap-animate">
               
@@ -206,27 +209,26 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-12 text-center mb-5 probootstrap-animate" style="padding-top: 0px ;">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">GHI ASSETS LIMITED</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>
-                GHI Assets Ltd was incorporated  under the laws of Nigeria in 2004. It is an investment company holding varying interests in the different companies within the  group. We specialise in airline representation and management, business and leisure travel management,       training and technology solutions.
-<br/>
-<br/>
-                GHI Assets has business interests in  , Angola, Benin Republic, Cameroon Gabon and Nigeria with plans to expand into more African countries.
-<br/>
-<br/>
-                
-                We strive to realize leading market positions in our businesses and core technologies to achieve sustainable profitable growth.
+            <!-- <h2 class="display-4 border-bottom probootstrap-section-heading">GHI ASSETS LIMITED</h2> -->
+          
 
-              </em></p>
-              <!-- <p class="probootstrap-author">
-                <a href="https://probootstrap.com/" target="_blank">
-                  <img src="assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-                  <span class="probootstrap-name">James Smith</span>
-                  <span class="probootstrap-title">Chief Executive Officer</span>
-                </a>
-              </p> -->
-            </blockquote>
+            <div class="white-box">
+              <!-- <h3 class="box-title m-b-0">Lightbox gallery</h3> -->
+              <!-- <code>&lt;a href="..." title="title will be apear here"&gt;&lt;img src="..."/&gt;&lt;/a&gt;</code>  m-t-30 --> 
+              <div class="zoom-gallery">
+                  <a href="gallery/thanksgiving001.jpg" title="2024 GHI thanksgiving">
+                      <img src="gallery/thanksgiving001.jpg" width="32.5%" />
+                  </a>
+                  <!-- <a href="plugins/images/big/img6.jpg" title="This image fits only horizontally.">
+                      <img src="plugins/images/big/img6.jpg" width="32.5%" />
+                  </a>
+                  <a href="plugins/images/big/img4.jpg">
+                      <img src="plugins/images/big/img4.jpg" width="32.5%" />
+                  </a> -->
+              </div> 
+              <!-- <small>just add code under class="popup-gallery".</small> -->
+          </div>
+
 
           </div>
         </div>
@@ -237,41 +239,6 @@
 
 
     
-    <section class="probootstrap_section" id="section-feature-testimonial" style="padding-top: 0px ;">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate" style="padding-top: 0px ;">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Vision</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>
-                To be the leading airline representatives and travel management specialist, providing services to reputable airlines and over 50% of travel and tour customers in Nigeria.</em></p>
-            </blockquote>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    <!-- END section -->
-
-
-
-    <section class="probootstrap_section" id="section-feature-testimonial" style="padding-top: 0px ;">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate" style="padding-top: 0px ;">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Mission</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>
-                To deliver unparalleled service to our customers in airline representation and management, business and leisure travel management, training and travel technology solutions as a result, retaining profitability.
-              </em></p>            
-            </blockquote>
-
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    <!-- END section -->
 
 
 
@@ -319,6 +286,10 @@
   
     <script src="assets/js/main.js"></script>
   
+
+     <!-- Magnific popup JavaScript -->
+     <script src="Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+     <script src="Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
   
   
     <style>
